@@ -4,22 +4,26 @@ export const LANGUAGES: Language[] = [
   {
     code: 'en-US',
     name: 'English',
-    region: 'United States'
+    region: 'United States',
+    flag: '🇺🇸'
   },
   {
     code: 'de-DE',
     name: 'Deutsch',
-    region: 'Deutschland'
+    region: 'Deutschland',
+    flag: '🇩🇪'
   },
   {
     code: 'ja-JP',
     name: '日本語',
-    region: '日本'
+    region: '日本',
+    flag: '🇯🇵'
   },
   {
     code: 'fr-FR',
     name: 'Français',
-    region: 'France'
+    region: 'France',
+    flag: '🇫🇷'
   }
 ] as const;
 

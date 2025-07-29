@@ -113,13 +113,6 @@ export class BookGenerator {
     return reviews;
   }
 
-  private makeDate(): string {
-    const start = new Date(2020, 0, 1);
-    const end = new Date();
-    const time = start.getTime() + this.rng() * (end.getTime() - start.getTime());
-    return new Date(time).toLocaleDateString(this.config.language);
-  }
-
   private makeLikes(): number {
     
     const likesSeed = hashString(this.config.seed + '_likes');

@@ -22,6 +22,7 @@ export interface Language {
   code: 'en-US' | 'de-DE' | 'ja-JP' | 'fr-FR';
   name: string;
   region: string;
+  flag: string;
 }
 
 export interface GeneratorConfig {
