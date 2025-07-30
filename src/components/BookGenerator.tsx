@@ -251,7 +251,7 @@ export const BookGenerator: React.FC = () => {
                 </Label>
                 <Input
                   type="number"
-                  value={likesAvg === 0 ? '' : likesAvg.toString()}
+                  value={likesAvg.toString()}
                   onChange={(e) => {
                     const val = e.target.value === '' ? 0 : parseFloat(e.target.value);
                     if (!isNaN(val)) {
@@ -286,7 +286,7 @@ export const BookGenerator: React.FC = () => {
                 </Label>
                 <Input
                   type="number"
-                  value={reviewsAvg === 0 ? '' : reviewsAvg.toString()}
+                  value={reviewsAvg.toString()}
                   onChange={(e) => {
                     const val = e.target.value === '' ? 0 : parseFloat(e.target.value);
                     if (!isNaN(val)) {
@@ -345,7 +345,7 @@ export const BookGenerator: React.FC = () => {
         {books.length > 0 ? (
           <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm overflow-hidden rounded-xl">
             <CardHeader className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-4 sm:p-6">
-              <CardTitle className="flex items-center justify-center gap-3 text-lg sm:text-xl text-center">
+              <CardTitle className="flex items-center justify-center text-lg sm:text-xl text-center">
                 Generated Books ({books.length})
               </CardTitle>
               <CardDescription className="text-indigo-100 text-center text-sm sm:text-base">
